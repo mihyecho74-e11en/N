@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b1935">
+<title>Ellen | Retail Expert Network</title>
+<style>
+:root{
+  --navy:#0b1935;
+  --navy-light:#14294b;
+  --sky:#b9dcf7;
+  --sky-soft:#e1f0ff;
+  --accent:#75b8ed;
+  --line:#29466b;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--navy);
+  color:var(--sky-soft);
+  font-family:Arial,Helvetica,sans-serif;
+}
+.page{
+  max-width:520px;
+  min-height:100vh;
+  margin:auto;
+  padding:28px 22px 35px;
+  background:radial-gradient(ellipse at top right,#1b365b 0%,var(--navy) 60%);
+}
+header{padding:20px 0 30px}
+.logo{
+  display:inline-block;
+  border:1px solid var(--line);
+  border-radius:30px;
+  padding:9px 13px;
+  color:var(--sky);
+  font-size:12px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+h1{
+  font-size:54px;
+  line-height:1;
+  letter-spacing:-2px;
+  margin:27px 0 14px;
+  color:var(--sky-soft);
+}
+.tagline{
+  font-size:22px;
+  line-height:1.4;
+  font-weight:bold;
+  margin:0 0 12px;
+  color:var(--sky);
+}
+.description{
+  font-size:16px;
+  line-height:1.7;
+  color:#a6c2df;
+  margin:0;
+}
+.cta{
+  display:block;
+  text-align:center;
+  background:var(--sky);
+  color:var(--navy);
+  padding:17px;
+  border-radius:15px;
+  text-decoration:none;
+  font-size:19px;
+  font-weight:bold;
+  margin-top:25px;
+}
+.section-title{
+  font-size:13px;
+  letter-spacing:2px;
+  color:var(--accent);
+  margin:8px 0 15px;
+}
+.services{display:grid;gap:12px}
+.service{
+  padding:20px;
+  border:1px solid var(--line);
+  background:#112343;
+  border-radius:18px;
+}
+.service-top{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+.icon{
+  width:45px;height:45px;
+  display:grid;place-items:center;
+  background:#203d60;
+  border-radius:13px;
+  font-size:23px;
+  flex-shrink:0;
+}
+.service h2{
+  font-size:20px;
+  margin:0;
+  color:var(--sky-soft);
+}
+.service p{
+  color:#a6c2df;
+  font-size:15px;
+  line-height:1.6;
+  margin:12px 0 0;
+}
+.connect{
+  margin-top:28px;
+  padding:22px;
+  border-radius:20px;
+  background:var(--navy-light);
+  border:1px solid var(--line);
+}
+.connect h2{font-size:24px;margin:0 0 9px;color:var(--sky-soft)}
+.connect p{font-size:15px;line-height:1.6;color:#a6c2df}
+button{
+  width:100%;
+  border:0;
+  border-radius:13px;
+  padding:16px;
+  background:var(--sky);
+  color:var(--navy);
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+}
+.email{
+  display:block;
+  text-align:center;
+  margin-top:23px;
+  color:var(--sky);
+  text-decoration:none;
+  font-size:16px;
+}
+footer{
+  text-align:center;
+  padding-top:25px;
+  color:#7897b8;
+  font-size:12px;
+}
+#contact{
+  display:none;
+  position:fixed;
+  inset:0;
+  z-index:5;
+  overflow:auto;
+  background:var(--navy);
+  padding:25px 22px;
+}
+.form-inner{max-width:476px;margin:auto}
+.back{
+  width:auto;
+  background:transparent;
+  color:var(--sky);
+  padding:8px 0;
+}
+.form-inner h2{font-size:30px;color:var(--sky-soft);margin:28px 0 10px}
+.form-inner p{color:#a6c2df;line-height:1.6}
+label{display:block;margin:18px 0 8px;color:var(--sky);font-weight:bold}
+input,textarea{
+  width:100%;
+  padding:14px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#112343;
+  color:white;
+  font-size:16px;
+  font-family:inherit;
+}
+textarea{height:120px;resize:vertical}
+.form-inner button[type="submit"]{margin-top:20px}
+</style>
+</head>
+<body>
+<main class="page">
+  <header>
+    <div class="logo">RETAIL EXPERT NETWORK</div>
+    <h1>Hi, I'm Ellen.</h1>
+    <p class="tagline">Find the right retail expert.<br>Build better retail together.</p>
+    <p class="description">
+      A simple way to discover and connect with retail experts
+      who understand people, stores, and market trends.
+    </p>
+    <a class="cta" href="#experts">Explore Expertise ↓</a>
+  </header>
+
+  <section id="experts">
+    <p class="section-title">HOW I CAN HELP</p>
+    <div class="services">
+      <article class="service">
+        <div class="service-top">
+          <div class="icon">🤝</div>
+          <h2>People Care</h2>
+        </div>
+        <p>Understand people, empower teams, and grow together.</p>
+      </article>
+      <article class="service">
+        <div class="service-top">
+          <div class="icon">🏬</div>
+          <h2>On-site Management</h2>
+        </div>
+        <p>Identify store challenges and turn them into practical solutions.</p>
+      </article>
+      <article class="service">
+        <div class="service-top">
+          <div class="icon">📈</div>
+          <h2>Market Trend Insights</h2>
+        </div>
+        <p>Spot changing customer needs and discover new opportunities.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="connect">
+    <h2>Let's connect.</h2>
+    <p>Looking for retail expertise or a fresh perspective? Tell me what you need.</p>
+    <button onclick="openContact()">Contact Me ↗</button>
+  </section>
+
+  <a class="email" href="mailto:mhcho@gmail.com">📧 mhcho@gmail.com</a>
+  <footer>PEOPLE · STORES · INSIGHTS</footer>
+</main>
+
+<section id="contact">
+  <div class="form-inner">
+    <button class="back" type="button" onclick="closeContact()">← Back</button>
+    <h2>Let's talk retail.</h2>
+    <p>Share a few details and let's explore how we can work together.</p>
+    <form action="mailto:mhcho@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Your Name</label>
+      <input id="name" name="Name" placeholder="Enter your name" required>
+      <label for="email">Your Email</label>
+      <input id="email" name="Email" type="email" placeholder="you@example.com" required>
+      <label for="topic">What do you need help with?</label>
+      <input id="topic" name="Topic" placeholder="People, store operations, market trends..." required>
+      <label for="message">Your Message</label>
+      <textarea id="message" name="Message" placeholder="Tell me a little about your project..."></textarea>
+      <button type="submit">Send Inquiry ↗</button>
+    </form>
+    <a class="email" href="mailto:mhcho@gmail.com">📧 mhcho@gmail.com</a>
+  </div>
+</section>
+
+<script>
+function openContact(){
+  document.getElementById('contact').style.display='block';
+}
+function closeContact(){
+  document.getElementById('contact').style.display='none';
+}
+</script>
+</body>
+</html>
